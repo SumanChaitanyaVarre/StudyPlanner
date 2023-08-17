@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">outlab9</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="pet_name">
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Rat</item>
+        <item>Rabbit</item>
+        <item>Pigeon</item>
+        <item>Snake</item>
+        <item>Elephant</item>
+        <item>Cow</item>
+    </string-array>
+    <string-array name="desc">
+        <item>Cat is cute</item>
+        <item>Dog is faithful</item>
+        <item>Rat eats cheese</item>
+        <item>Rabbit is very cute</item>
+        <item>Pigeon can fly</item>
+        <item>Snake is very snaky</item>
+        <item>Elephant is very huge</item>
+        <item>Cow gives milk</item>
+    </string-array>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E68B6F"
+    tools:context=".Study_Plan">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="193dp"
+        android:background="#E68B6F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRecycler1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_studyplan1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:ems="10"
+                android:hint="Enter The Title"
+                android:inputType="textPersonName"
+                android:textColor="#272424"
+                android:textColorHint="#8F8282"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/timebutton1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_studyplan2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="Enter The Description"
+                android:inputType="textPersonName"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#9E8E8E"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/save1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_studyplan1" />
+
+            <Button
+                android:id="@+id/datebutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="15dp"
+                android:background="#CA3607"
+                android:text="setDate"
+                android:textColor="#F1EDED"
+                app:layout_constraintBottom_toBottomOf="@+id/timebutton1"
+                app:layout_constraintEnd_toStartOf="@+id/timebutton1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/timebutton1" />
+
+            <Button
+                android:id="@+id/timebutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="178dp"
+                android:background="#EF1C1C"
+                android:text="SetTime"
+                android:textColor="#EAE2E2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/datebutton1"
+                app:layout_constraintTop_toBottomOf="@+id/edit_studyplan1" />
+
+            <Button
+                android:id="@+id/save1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="#CA3607"
+                android:text="save"
+                android:textColor="#F6F2F1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/load1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#CA3607"
+        android:text="Refresh"
+        android:textColor="#EDE5E5"
+        app:layout_constraintBottom_toTopOf="@+id/myRecycler1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:background="#F4CEC3"
+        android:text="Study Plan"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#E33A05"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myRecycler1"
+        app:layout_constraintEnd_toStartOf="@+id/load1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

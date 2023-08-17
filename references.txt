@@ -1,0 +1,8 @@
+1) https://youtu.be/h2TVVMKkn7Y
+2) https://www.youtube.com/playlist?list=PLhhNsarqV6MQ59jOKACuCzASgBGMuR-km
+3) https://www.youtube.com/playlist?list=PLlyCyjh2pUe9wv-hU4my-Nen_SvXIzxGB
+4) https://stackoverflow.com/questions/7510219/deleting-row-in-sqlite-in-android
+5) https://www.youtube.com/watch?v=sGVPCzWqeiw
+6) https://youtu.be/xs5406vApTo
+7) https://github.com/SundeepK/CompactCalendarView
+

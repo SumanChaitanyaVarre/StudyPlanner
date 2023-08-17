@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8E386"
+    tools:context=".Assignment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="196dp"
+        android:background="#B8E386"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRecycler2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_assignment1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:ems="10"
+                android:hint="Enter The Title"
+                android:inputType="textPersonName"
+                android:textColor="#272424"
+                android:textColorHint="#8F8282"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/timebutton2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_assignment2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="Enter The Description"
+                android:inputType="textPersonName"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#9E8E8E"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/save2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_assignment1" />
+
+            <Button
+                android:id="@+id/datebutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="15dp"
+                android:background="#427802"
+                android:text="setDate"
+                android:textColor="#F1EDED"
+                app:layout_constraintBottom_toBottomOf="@+id/timebutton2"
+                app:layout_constraintEnd_toStartOf="@+id/timebutton2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/timebutton2" />
+
+            <Button
+                android:id="@+id/timebutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="178dp"
+                android:background="#427802"
+                android:text="SetTime"
+                android:textColor="#EAE2E2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/datebutton2"
+                app:layout_constraintTop_toBottomOf="@+id/edit_assignment1" />
+
+            <Button
+                android:id="@+id/save2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="#427802"
+                android:text="save"
+                android:textColor="#F6F2F1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/load2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="#427802"
+        android:text="Refresh"
+        android:textColor="#EDE5E5"
+        app:layout_constraintBottom_toTopOf="@+id/myRecycler2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        android:background="#E5F4D5"
+        android:text="Assignment"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#237A04"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myRecycler2"
+        app:layout_constraintEnd_toStartOf="@+id/load2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
